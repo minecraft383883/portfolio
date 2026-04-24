@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mario Jiménez | Full-Stack Developer</title>
+  <meta name="description" content="Portfolio de Mario Jiménez, desarrollador full-stack especializado en Next.js, React, Supabase y Vercel." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-label="MJ logo">
+          <rect width="28" height="28" rx="8" fill="#3B82F6"/>
+          <text x="14" y="20" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-weight="800" font-size="13">MJ</text>
+        </svg>
+        Mario Jiménez
+      </a>
+      <nav>
+        <a href="#projects">Proyectos</a>
+        <a href="#stack">Stack</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#contact" class="nav-cta">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero container">
+      <span class="badge">✦ Disponible para prácticas y freelance</span>
+      <h1>Construyo aplicaciones web funcionales, rápidas y bien pensadas.</h1>
+      <p>
+        Soy Mario Jiménez, desarrollador full-stack. Trabajo con Next.js, React, PHP,
+        SQL Server, Supabase y Vercel para crear productos reales que resuelven problemas reales.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">Ver proyectos →</a>
+        <a class="btn btn-secondary" href="https://github.com/minecraft383883" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="container section">
+      <div class="section-head">
+        <span class="eyebrow">✦ Trabajo destacado</span>
+        <h2>Proyectos desplegados</h2>
+        <p>Aplicaciones reales publicadas en Vercel, construidas con tecnologías modernas.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Dendrosfera -->
+        <article class="project-card">
+          <div class="project-image">
+            <img
+            src="./assets/dendrosfera.jpg"
+            alt="Vista previa de Dendrosfera"
+            width="1200" height="800" loading="lazy"
+            />
+              
+            <a href="https://dendrosfera.vercel.app" target="_blank" rel="noopener noreferrer" class="project-live-btn">
+              Ver en vivo ↗
+            </a>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <h3>Dendrosfera</h3>
+              <span class="project-status status-live">Live</span>
+            </div>
+            <p>Plataforma web con base de datos en producción. Gestión de datos con DATABASE_URL dinámica y deploy continuo en Vercel.</p>
+            <div class="stack-tags">
+              <span>Next.js</span><span>PostgreSQL</span><span>Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://dendrosfera.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Demo ↗</a>
+              
+            </div>
+          </div>
+        </article>
+
+        <!-- Vegas IA -->
+        <article class="project-card">
+          <div class="project-image">
+            <img
+            src="./assets/appvegas.jpg"
+            alt="Vista previa de Vegas IA"
+            width="1200" height="800" loading="lazy"
+            />
+            <a href="https://vegas-ia.vercel.app" target="_blank" rel="noopener noreferrer" class="project-live-btn">
+              Ver en vivo ↗
+            </a>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <h3>Vegas IA</h3>
+              <span class="project-status status-live">Live</span>
+            </div>
+            <p>Sistema de análisis con cron jobs automáticos en Vercel — warmup a las 7AM y tracking nocturno programado.</p>
+            <div class="stack-tags">
+              <span>Next.js</span><span>TypeScript</span><span>Cron Jobs</span><span>Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://vegas-ia.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Demo ↗</a>
+              
+            </div>
+          </div>
+        </article>
+
+        <!-- Sistema EPP -->
+        <article class="project-card">
+          <div class="project-image">
+            <img
+            src="./assets/sistema-epp.jpg"
+            alt="Vista previa de Sistema EPP"
+            width="1200" height="800" loading="lazy"
+            />
+            <a href="https://sistema-epp-mauve.vercel.app" target="_blank" rel="noopener noreferrer" class="project-live-btn">
+              Ver en vivo ↗
+            </a>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <h3>Sistema EPP</h3>
+              <span class="project-status status-live">Live</span>
+            </div>
+            <p>Sistema de gestión empresarial con autenticación, control de acceso y módulos administrativos.</p>
+            <div class="stack-tags">
+              <span>Next.js</span><span>React</span><span>Supabase</span><span>Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://sistema-epp-mauve.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Demo ↗</a>
+              
+          </div>
+        </article>
+
+        <!-- Mentcheck Web -->
+        <article class="project-card">
+          <div class="project-image">
+            <img
+            src="./assets/mentcheck.jpg"
+            alt="Vista previa de Mentcheck Web"
+            width="1200" height="800" loading="lazy"
+            />
+            <a href="https://mentcheck-web.vercel.app" target="_blank" rel="noopener noreferrer" class="project-live-btn">
+              Ver en vivo ↗
+            </a>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <h3>Mentcheck Web</h3>
+              <span class="project-status status-live">Live</span>
+            </div>
+            <p>Aplicación web de bienestar mental. Seguimiento de estados emocionales con interfaz pensada para el usuario.</p>
+            <div class="stack-tags">
+              <span>Next.js</span><span>Prisma</span><span>PostgreSQL</span><span>Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://mentcheck-web.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Demo ↗</a>
+              
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="container section">
+      <div class="section-head">
+        <span class="eyebrow">✦ Tecnologías</span>
+        <h2>Stack de trabajo</h2>
+        <p>Las herramientas con las que construyo aplicaciones de extremo a extremo.</p>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-item">
+          <img src="https://cdn.simpleicons.org/nextdotjs/white" width="28" height="28" alt="Next.js" loading="lazy" />
+          <span>Next.js</span>
+        </div>
+        <div class="stack-item">
+          <img src="https://cdn.simpleicons.org/react/61DAFB" width="28" height="28" alt="React" loading="lazy" />
+          <span>React</span>
+        </div>
+        <div class="stack-item">
+          <img src="https://cdn.simpleicons.org/typescript/3178C6" width="28" height="28" alt="TypeScript" loading="lazy" />
+          <span>TypeScript</span>
+        </div>
+        <div class="stack-item">
+          <img src="https://cdn.simpleicons.org/php/7077A1" width="28" height="28" alt="PHP" loading="lazy" />
+          <span>PHP</span>
+        </div>
+        <div class="stack-item">
+          <img src="https://cdn.simpleicons.org/supabase/3ECF8E" width="28" height="28" alt="Supabase" loading="lazy" />
+          <span>Supabase</span>
+        </div>
+        <div class="stack-item">
+          <img src="https://cdn.simpleicons.org/postgresql/4169E1" width="28" height="28" alt="PostgreSQL" loading="lazy" />
+          <span>PostgreSQL</span>
+        </div>
+        <div class="stack-item">
+          <img src="https://cdn.simpleicons.org/docker/2496ED" width="28" height="28" alt="Docker" loading="lazy" />
+          <span>Docker</span>
+        </div>
+        <div class="stack-item">
+          <img src="https://cdn.simpleicons.org/vercel/white" width="28" height="28" alt="Vercel" loading="lazy" />
+          <span>Vercel</span>
+        </div>
+        <div class="stack-item">
+          <img src="https://cdn.simpleicons.org/prisma/white" width="28" height="28" alt="Prisma" loading="lazy" />
+          <span>Prisma</span>
+        </div>
+        <div class="stack-item">
+          <img src="https://cdn.simpleicons.org/tailwindcss/38BDF8" width="28" height="28" alt="Tailwind CSS" loading="lazy" />
+          <span>Tailwind</span>
+        </div>
+        <div class="stack-item">
+          <img src="https://cdn.simpleicons.org/git/F05032" width="28" height="28" alt="Git" loading="lazy" />
+          <span>Git</span>
+        </div>
+        <div class="stack-item">
+        <svg width="28" height="28" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="SQL Server">
+            <ellipse cx="64" cy="32" rx="48" ry="20" fill="#CC2927"/>
+            <path d="M16 32v22c0 11.046 21.49 20 48 20s48-8.954 48-20V32c0 11.046-21.49 20-48 20S16 43.046 16 32z" fill="#CC2927"/>
+            <path d="M16 54v22c0 11.046 21.49 20 48 20s48-8.954 48-20V54c0 11.046-21.49 20-48 20S16 65.046 16 54z" fill="#AA1F1D"/>
+            <path d="M16 76v20c0 11.046 21.49 20 48 20s48-8.954 48-20V76c0 11.046-21.49 20-48 20S16 87.046 16 76z" fill="#8C1A19"/>
+        </svg>
+        <span>SQL Server</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="about" class="container section">
+      <div class="about-grid">
+        <div>
+          <span class="eyebrow">✦ Sobre mí</span>
+          <h2>Desarrollador full-stack, estudiante y builder.</h2>
+          <p>
+            Estudio Desarrollo de Software y en paralelo construyo proyectos reales que me ayudan a aprender más rápido.
+            Me interesa resolver problemas concretos con tecnología: desde sistemas de inventario hasta plataformas web completas.
+          </p>
+          <p>
+            Trabajo con el stack moderno del ecosistema JavaScript — Next.js, Supabase, Prisma — pero también tengo
+            experiencia con PHP y SQL Server en entornos empresariales con Docker.
+          </p>
+          <div class="about-facts">
+            <div class="fact">
+              <span class="fact-num">4</span>
+              <span class="fact-label">Proyectos en producción</span>
+            </div>
+            <div class="fact">
+              <span class="fact-num">12+</span>
+              <span class="fact-label">Tecnologías usadas</span>
+            </div>
+            <div class="fact">
+              <span class="fact-num">100%</span>
+              <span class="fact-label">Deploy en Vercel</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="about-card-row">
+              <span class="about-dot green"></span> Disponible para proyectos
+            </div>
+            <div class="about-card-row">
+              <span class="about-dot blue"></span> Reynosa, Tamaulipas · MX
+            </div>
+            <div class="about-card-row">
+              <span class="about-dot yellow"></span> Estudiante activo
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <span class="eyebrow">✦ Contacto</span>
+        <h2>¿Tienes un proyecto en mente?</h2>
+        <p>Estoy disponible para prácticas profesionales, proyectos freelance y colaboraciones. Escríbeme y hablamos.</p>
+        <div class="contact-actions">
+          <a href="mariodavidjimenezp@hotmail.com" class="btn btn-primary btn-lg">Enviar email →</a>
+          <a href="https://github.com/minecraft383883" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">Ver GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2026 Mario Jiménez</span>
+      <span>Construido con HTML, CSS y JS · Desplegado en Vercel</span>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
